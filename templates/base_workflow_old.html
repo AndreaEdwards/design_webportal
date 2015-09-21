@@ -1,0 +1,22 @@
+{%extends base.html%}
+{% block content %}
+
+<div id="wrapper">
+    <!-- Sidebar -->
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav" style="padding-top:40px;">
+            <li style="padding-bottom:20px;"><a href="/protein/">Design Pipeline</a>
+            </li>
+            <li style="padding-bottom:20px;"><a href="#">Tutorial</a>
+            </li>
+        </ul>
+    </div
+    <!-- Page content -->
+    <div id="page-content-wrapper">
+        {% block content2 %} {%end%}
+    </div>
+
+
+{%end%}
+
+</div>

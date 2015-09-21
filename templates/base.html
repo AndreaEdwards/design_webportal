@@ -1,0 +1,90 @@
+
+<html lang="en">
+
+    <head>
+        <title>CREATE Wizard</title>
+        <link rel="icon" href="/static/img/favicon.ico" type="image/x-icon">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="/static/css/bootstrap-theme.min.css">
+        <link href="/static/css/bootstrap.css" rel="stylesheet">
+        <link href="/static/css/main.css" rel="stylesheet">
+        <link rel="stylesheet" href="/static/css/jquery-ui.css">
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="/static/js/jquery-1.11.0.min.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="/static/js/bootstrap.min.js"></script>
+        <script src="/static/js/jquery.js"></script>
+        <script src="/static/js/jquery-ui.js"></script>
+        <script src="/static/js/json2.js"></script> 
+        <script src="/static/js/pymol.js"></script>
+
+        {%block head%}  {%end%}
+    </head>
+
+    <body>
+        <header class="navbar-custom" role="banner">
+          <nav class="navbar navbar-default" style="margin-bottom:0;">
+            <div class="container-fluid">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" style="width:75%;"  href="/">
+                  <svg width="100%" height="100%" viewBox="0 0 891 155" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+                      <g transform="matrix(1,0,0,1,-1247.39,-743.018)">
+                          <g transform="matrix(1,0,0,1,703.212,332.726)">
+                              <text x="528.745px" y="561.817px" style="font-family:Arial Rounded MT Bold;font-size:200px;fill:rgb(0,113,58);">Bio</text>
+                              <text x="847.593px" y="561.817px" style="font-family:Ayuthaya;font-size:200px;fill:black;">Verse</text>
+                          </g>
+                      </g>
+                  </svg>
+                </a>
+              </div>
+
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                  <li><a href="/protein/">DESIGN</a></li>
+                  <li><a href="#">TUTORIAL</a></li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Action</a></li>
+                      <li><a href="#">Another action</a></li>
+                      <li><a href="#">Something else here</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#">Separated link</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#">One more separated link</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <form class="navbar-form navbar-left" role="search">
+                      <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                      </div>
+                      <button type="submit" class="btn btn-default">Submit</button>
+                    </form>
+                  </li>
+                </ul>
+              </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+          </nav>
+        </header>
+
+        {% block content %} {%end%}
+
+        {%block footer%} {%end%}
+        <footer style="padding-top:50px;a">
+          <p >&copy; The Wizard Project 2015</p>
+        </footer>
+
+    </body>
+</html>

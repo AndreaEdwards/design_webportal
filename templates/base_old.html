@@ -1,0 +1,55 @@
+
+<html lang="en">
+
+    <head>
+        <title>CREATE Wizard</title>
+        <link rel="icon" href="/static/img/favicon.ico" type="image/x-icon">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="/static/css/bootstrap-theme.min.css">
+        <link href="/static/css/bootstrap.css" rel="stylesheet">
+        <link href="/static/css/main.css" rel="stylesheet">
+        <link rel="stylesheet" href="/static/css/jquery-ui.css">
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="/static/js/jquery-1.11.0.min.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="/static/js/bootstrap.min.js"></script>
+        <script src="/static/js/jquery.js"></script>
+        <script src="/static/js/jquery-ui.js"></script>
+        <script src="/static/js/json2.js"></script> 
+        <script src="/static/js/pymol.js"></script>
+
+        {%block head%}  {%end%}
+    </head>
+
+    <body>
+        <header class="navbar-custom" role="banner">
+            <nav role="navigation" style="padding-bottom:15px;">
+              <div class="container-fluid">
+                  <a class="navbar-brand" href="/">
+                      <svg width="275px" viewBox="0 0 1852 236" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+                          <g transform="matrix(1,0,0,1,-320.723,-750.654)">
+                              <g transform="matrix(2.14522,0,0,2.14522,587.368,-921.305)">
+                                  <text x="407.018px" y="871.883px" style="font-family:Curlz MT;font-size:124.307px;fill:black;">W<tspan x="516.636px 543.1px " y="871.883px 871.883px ">iz</tspan>ard</text>
+                              </g>
+                              <g transform="matrix(2.14522,0,0,2.14522,-2123.07,-12.9801)">
+                                  <text x="1133.26px" y="463.039px" style="font-family:Gabriola;font-size:186.461px;fill:black;">CR<tspan x="1309.34px 1387.69px 1470.04px " y="463.039px 463.039px 463.039px ">EAT</tspan>E</text>
+                              </g>
+                          </g>
+                      </svg>
+                  </a>
+              </div>
+            </nav>
+        </header>
+
+        {% block content %} {%end%}
+
+        {%block footer%} {%end%}
+        <footer style="padding-top:50px;a">
+          <p >&copy; The Wizard Project 2015</p>
+        </footer>
+
+    </body>
+</html>

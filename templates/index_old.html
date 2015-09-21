@@ -1,0 +1,75 @@
+{% extends base_workflow.html %}
+{%block head%}
+<script type="text/javascript">
+
+var pymol = new PyMOL('localhost', 8085, 'on'); // create PyMOL object with buffering enabled
+
+var cmd = pymol.cmd; // assign a global symbol for the PyMOL cmd API
+
+function demoLoop() {
+
+    cmd.reinitialize();
+    cmd.load("/Users/andrea/Desktop/test/static/img/4PDJ.pdb");
+    cmd.spectrum("b");
+    cmd.show("surface");
+    count = pymol.flush();
+
+}
+
+</script>
+{%end%}
+
+{% block content2%}
+
+<div class="container">
+    <p style="margin-top:30px;">Protein Engineering Pipeline</p>
+    <p>Informational page</p>
+    <div class="row">
+        <p>Powered By:</p>
+        <table>
+            <tr>
+                <td>
+                    <a href="https://www.rosettacommons.org/"><img style="width:200px;" src="/static/img/rosetta.png"></a>
+                </td>
+                <td>
+                    <a href="http://prody.csb.pitt.edu/"><img style="width:200px;" src="/static/img/prody.png"></a>
+                </td>
+                <td>
+                    <a href="http://biopython.org/wiki/Biopython"><img style="width:200px;" src="/static/img/biopython.png"></a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="http://www.rcsb.org/pdb/home/home.do"><img style="height:70px;" src="/static/img/rcsb_logo.png"></a>
+                </td>
+                <td>
+                    <a href="http://pfam.xfam.org/"><img src="static/img/pfam.png"></a>
+                </td>
+                <td>
+                    <a href="http://blast.ncbi.nlm.nih.gov/Blast.cgi"><img style="height:70px;" src="/static/img/ncbi_blast.png"></a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="http://hmmer.janelia.org/"><img style="height:70px;" src="/static/img/hmmer_title.png">HMMER</a>
+                </td>
+                <td>
+                    <a href="http://mathbio.nimr.mrc.ac.uk/wiki/POPS"><img style="height:70px;" src="/static/img/pops.png"></a>
+                </td>
+                <td>
+                    <a href="http://www.uniprot.org/"><img src="/static/img/uniprot.png"></a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="http://prodata.swmed.edu/promals3d/promals3d.php">PROMALS3D</a>
+                </td>
+                <td>
+                    <a href="http://zhanglab.ccmb.med.umich.edu/I-TASSER/"><img style="width:200px;" src="/static/img/itasser.png"></a>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+{%end%}

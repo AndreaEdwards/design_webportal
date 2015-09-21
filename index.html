@@ -1,0 +1,28 @@
+<script src="json2.js"></script> 
+<script src="pymol.js"></script>
+
+<script type="text/javascript">
+
+var pymol = new PyMOL(null, null, 'on'); // create PyMOL object with buffering enabled
+
+var cmd = pymol.cmd; // assign a global symbol for the PyMOL cmd API
+
+function demoLoop() {
+
+    cmd.reinitialize();
+    cmd.load("/Users/andrea/Desktop/4PDJ.pdb");
+    cmd.spectrum("b");
+    cmd.show("surface");
+    count = pymol.flush();
+
+}
+
+</script>
+
+</head>
+
+<body>
+
+<a href="javascript:void(0)" onClick="demoLoop()">Run this program</a>
+
+</body>
